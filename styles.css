@@ -109,7 +109,7 @@ body {
 
 .input-pair {
   display: flex;
-  gap: 3rem;
+  gap: 8rem;
 }
 
 .input-pair div {
@@ -133,9 +133,48 @@ body {
   border-radius: 4px;
   font-size: 1.6rem;
   padding: 0.6rem;
+  width: 28rem;
 }
 
 input:focus {
   outline: 1px solid #974a20;
   box-shadow: 0px 1px 4px #999;
+}
+
+.logging {
+  padding: 3rem 6rem;
+}
+
+input[type="submit"] {
+  border: none;
+  border-radius: 8px;
+  padding: 1.5rem 4rem;
+  background-color: #974a20;
+  color: #fcf4ed;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #b95925;
+}
+
+p.login {
+  font-size: 1.8rem;
+}
+
+p.login a:link,
+p.login a:visited {
+  text-decoration: none;
+  color: #974a20;
+  font-weight: 900;
+}
+
+p.login a:hover,
+p.login a:active {
+  text-decoration: underline;
+  color: #b95925;
+  font-weight: 700;
 }
