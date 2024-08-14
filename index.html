@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
     <title>Sign-up Form</title>
 </head>
 
@@ -32,12 +33,12 @@
                 <div class="input-pair">
                     <div>
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <input type="text" id="first-name" name="first-name" minlength="3" maxlength="16">
                     </div>
 
                     <div>
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" minlength="3" maxlength="16">
                     </div>
                 </div>
                 <div class="input-pair">
@@ -54,7 +55,8 @@
                 <div class="input-pair">
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" minlength="8" maxlength="16">
+                        <p class="invalid-match hidden">*Passwords do not match</p>
                     </div>
 
                     <div>
